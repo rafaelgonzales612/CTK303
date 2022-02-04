@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: black;
+  width: 1200px;
+  margin: 100px auto;
+}
+
+.cls-1 {
+  animation: triup 1.0s linear infinite alternate;
+}
+
+@keyframes triup {
+  0% {fill: #A60000;}
+  25% {fill: #BD0000;}
+  50% {fill: #CB0000;}
+  75% {fill: #E20000;}
+  100% {fill: #FF5B5B;}
+}
+
+.cls-2 {
+  animation: trileft 1.0s linear infinite alternate;
+}
+
+@keyframes trileft {
+  0% {fill: #009fff;}
+  25% {fill: #00c5ff}
+  50% {fill: #00dfff;}
+  75% {fill: #00ffdf}
+  100% {fill: #7dfffc;}
+}
+
+.cls-3 {
+  animation: triright 1.0s linear infinite alternate;
+}
+
+@keyframes triright {
+  0% {fill: #4d7f17;}
+  25% {fill: #6bb120;}
+  50% {fill: #8ae429;}
+  75% {fill: #9afe2e;}
+  100% {fill: #aefe57;}
+}
+
+.cls-4 {
+  fill: #ddd;
+}
+
+#ggame {
+  animation: ggame 1.0s
+}
+
+@keyframes ggame {
+  0% {transform: translate(-100px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1.0;}
+}
+
+#agame {
+  animation: agame 1.5s
+}
+
+@keyframes agame {
+  0% {transform: translate(-250px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#mgame {
+  animation: mgame 2.0s
+}
+
+@keyframes mgame {
+  0% {transform: translate(-400px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#egame {
+  animation: egame 2.5s
+}
+
+@keyframes egame {
+  0% {transform: translate(-550px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#ddesign {
+  animation: ddesign 1.25s;
+}
+
+@keyframes ddesign {
+  0% {transform: translate(150px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#edesign {
+  animation: edesign 1.5s;
+}
+
+@keyframes edesign {
+  0% {transform: translate(300px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#sdesign {
+  animation: sdesign 1.75s;
+}
+
+@keyframes sdesign {
+  0% {transform: translate(450px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#idesign {
+  animation: idesign 2.0s;
+}
+
+@keyframes idesign {
+  0% {transform: translate(600px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#gdesign {
+  animation: gdesign 2.25s;
+}
+
+@keyframes gdesign {
+  0% {transform: translate(750px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#ndesign {
+  animation: ndesign 2.5s;
+}
+
+@keyframes ndesign {
+  0% {transform: translate(900px, 0); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#C {
+  animation: c 1.5s;
+}
+
+@keyframes c {
+  0% {transform: translate(0, 100px); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#T {
+  animation: t 2.0s;
+}
+
+@keyframes t {
+  0% {transform: translate(0, 250px); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+
+#K {
+  animation: k 2.5s;
+}
+
+@keyframes k {
+  0% {transform: translate(0, 400px); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
