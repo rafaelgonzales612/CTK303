@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>The Eternals</h1>
+      <nav>
+        <a href="#Ajak">Ajak</a>
+        <a href="#Druig">Druig</a>
+        <a href="#Gilgamesh">Gilgamesh</a>
+        <a href="#Ikaris">Ikaris</a>
+        <a href="#Kingo">Kingo</a>
+        <a href="#Makkari">Makkari</a>
+        <a href="#Phastos">Phastos</a>
+        <a href="#Sersi">Sersei</a>
+        <a href="#Sprite">Sprite</a>
+        <a href="#Thena">Thena</a>
+      </nav>
+
+      <div id="container">
+        <div class="eternals">
+          <img id="Ajak" src="img/ajak.jpg" alt="Ajak">
+          <p class="Ajaktext">The Eternal Ajak is the spiritual leader of the group, guiding the Eternals on their mission from their home planet to Earth to defend humankind from the predatorial Deviants.</p>
+        </div>
+        <div class="eternals">
+          <p class="Druigtext">Druig has the powerful ability to control the minds of humans with his cosmic energy, which at times makes it difficult to determine if he’s friend or foe.</p>
+          <img id="Druig" src="img/druig.jpg" alt="Druig">
+        </div>
+        <div class="eternals">
+          <img id="Gilgamesh" src="img/gilgamesh.jpg" alt="Gilgamesh">
+          <p class="Giltext">The powerful Eternal Gilgamesh is a fierce warrior remembered throughout history for his legendary battles.</p>
+        </div>
+        <div class="eternals">
+          <p class="Ikaristext">The powerful Eternal Ikaris is the moral, charismatic tactician of the group, tasked with keeping his team and humanity safe.</p>
+          <img id="Ikaris" src="img/ikaris.jpg" alt="Ikaris">
+        </div>
+        <div class="eternals">
+          <img id="Kingo" src="img/kingo.jpg" alt="Kingo">
+          <p class="Kingotext">The boisterous Eternal Kingo, enamored with the idea of fame, has taken the most advantage of his centuries-long time on Earth.</p>
+        </div>
+        <div class="eternals">
+          <p class="Makkaritext">With her cosmic-powered super-speed, Makkari scouts planets for the Eternals, a group of ancient, immortal beings working on behalf of the Celestials.</p>
+          <img id="Makkari" src="img/makkari.jpg" alt="Makkari">
+        </div>
+        <div class="eternals">
+          <img id="Phastos" src="img/phastos.jpg" alt="Phastos">
+          <p class="Phastext">The genius Phastos has nudged humanity’s technological advancements forward throughout the centuries while shielding his own brilliance.</p>
+        </div>
+        <div class="eternals">
+          <p class="Sersitext">The humankind-loving Eternal Sersi delights in her mission stationed on Earth; she’s as happy working as a museum curator as she is saving humanity.</p>
+          <img id="Sersi" src="img/sersi.jpg" alt="Sersi">
+        </div>
+        <div class="eternals">
+          <img id="Sprite" src="img/sprite.jpg" alt="Sprite">
+          <p class="Spritetext">The Eternal Sprite is the grandiose storyteller of the group who just so happens to possess the appearance of a 13-year-old girl.</p>
+        </div>
+        <div class="eternals">
+          <p class="Thenatext">The fierce warrior Thena is more comfortable in battle than anywhere else.</p>
+          <img id="Thena" src="img/thena.jpg" alt="Thena">
+        </div>
+      </div>
+
+      <!-- <h2 id="Ajak">Ajak</h2>
+      <h2 id="Sersi">Sersi</h2>
+      <h2 id="Ikaris">Ikaris</h2>
+      <h2 id="Sprite">Sprite</h2>
+      <h2 id="Phastos">Phastos</h2>
+      <h2 id="Thena">Thena</h2>
+      <h2 id="Gilgamesh">Gilgamesh</h2>
+      <h2 id="Makkari">Makkari</h2>
+      <h2 id="Druig">Druig</h2>
+      <h2 id="Kingo">Kingo</h2> -->
+
+    </div>
+    <script>
+      $(function() {
+        $('nav a').bind('click',function(event){
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 0
+          }, 1000);
+          event.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
