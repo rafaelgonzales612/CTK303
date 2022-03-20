@@ -87,3 +87,7 @@ p {
   word-spacing: 5px;
   letter-spacing: 1px;
 }
+
+iframe {
+  border: none;
+}
